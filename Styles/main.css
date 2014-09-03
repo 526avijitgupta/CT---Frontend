@@ -2,6 +2,8 @@
 
 body { background-color: rgb(245,245,245); }
 
+#ct-logo:hover { cursor:pointer; }
+
 .btn { text-align: left; }
 
 .left-aside-ionicons { font-size: 24px; }
