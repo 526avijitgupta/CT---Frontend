@@ -2,7 +2,7 @@
 
 body { background-color: rgb(245,245,245); }
 
-#ct-logo:hover { cursor:pointer; }
+.pointer:hover { cursor: pointer; }
 
 .btn { text-align: left; }
 
@@ -14,8 +14,28 @@ span[class^="ion-social"] { font-size:22px; }
 
 #panel-footer-connect { height: 20px; }
 
-.cpyrt-list { color: gray; }
+.small { color: gray; }
 
 .cpyrt-list:hover { color: rgb(80,80,80); }
 
 .cpyrt-navlist-fix-pos { padding-left:0px; padding-right:0px; margin-left: -70px; margin-top: -4px; }
+
+.content-sub-container { background-color: white; color: black; }
+
+.inline-form-marginleft { margin-left:70px; }
+
+#from-to { position: absolute; top: 198px; left: 370px; font-size: 18px; }
+
+#depart-on { width: 200px; }
+
+#date-picker { position: absolute; top: 50px; left: 190px; font-size: 18px; }
+
+.inline-form-select { margin-left:15px; }
+
+.form-select-inline { width: 79px; }
+
+#dotted-bottom { border-bottom: 1px gray dotted; }
+
+#search-flights-btn { float: right; margin:30px 30px 30px 0px; }
+
+#flights-content { font-size: 13px; }
