@@ -8,4 +8,14 @@ body { background-color: rgb(245,245,245); }
 
 .left-aside-ionicons { font-size: 24px; }
 
-/*#navbar-top { min-width: 1100px; }*/
+span[class^="ion-social"] { font-size:22px; }
+
+.btn-toolbar { display: inline-block; }
+
+#panel-footer-connect { height: 20px; }
+
+.cpyrt-list { color: gray; }
+
+.cpyrt-list:hover { color: rgb(80,80,80); }
+
+.cpyrt-navlist-fix-pos { padding-left:0px; padding-right:0px; margin-left: -70px; margin-top: -4px; }

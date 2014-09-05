@@ -7,12 +7,24 @@
 	<link rel="stylesheet" href="Styles/ionicons.css">
 	<script type="text/javascript" src="bootstrap/jquery.js"></script>
 	<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
-	<script type="text/javascript" src= "Scripts/link_active_assign.js">
+	<script type="text/javascript" src= "Scripts/link_active_assign.js"></script>
+	<script type="text/javascript">
+		var next_class;
+		$(function (){	
+			$('span[class^="ion-social"]').on('mouseover',function(){
+				var prev_class = $(this).attr('class');
+				next_class = prev_class.split('-outline').join("");
+				$(this).attr('class',next_class);
+			});
+			$('span[class^="ion-social"]').on('mouseleave',function(){
+				$(this).attr('class',next_class+'-outline');
+			});
+		});
 	</script>
 </head>
 <body>
 	<div class="container col-xs-12">
-		<div class="row navbar-header col-lg-12" id="navbar-top" style="background-color:#f1f1f1;">
+		<div class="row navbar-header col-md-12" id="navbar-top" style="background-color:#f1f1f1;">
 			<div class="col-md-3">
 				<img src="Styles/Images/ct_logo.jpg" id="ct-logo" style="height:40px; width:140px;" onclick="location.href='index.html'">
 			</div>
@@ -68,51 +80,95 @@
 				</ul>
 			</div>
 		</div>
+		<br><br>
 		<div class="btn-group-vertical" id="left-aside-menu">
 			<button type="button" class="btn btn-default" id="index">
 				<span class="ion-plane left-aside-ionicons"></span>
 				&nbsp;&nbsp;Flights&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
 			<button type="button" class="btn btn-default" id="hotels">
 				<span class="ion-pin left-aside-ionicons"></span>
 				&nbsp;&nbsp;Hotels&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
 			<button type="button" class="btn btn-default" id="flights-hotels">
 				<span class="ion-paper-airplane left-aside-ionicons"></span>
 				&nbsp;&nbsp;Flight + Hotels&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
 			<button type="button" class="btn btn-default" id="trains">
 				<span class="ion-skip-forward left-aside-ionicons"></span>
 				&nbsp;&nbsp;Trains&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
 			<button type="button" class="btn btn-default" id="buses">
 				<span class="ion-navigate left-aside-ionicons"></span>
 				&nbsp;&nbsp;Buses&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
 			<button type="button" class="btn btn-default" id="weekend-getaways">
 				<span class="ion-model-s left-aside-ionicons"></span>
 				&nbsp;&nbsp;Weekend Getaways&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
 			<button type="button" class="btn btn-default" id="collection">
 				<span class="ion-filing left-aside-ionicons"></span>
 				&nbsp;&nbsp;Collection&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
 			<button type="button" class="btn btn-default" id="waytogo">
 				<span class="ion-location left-aside-ionicons"></span>
 				&nbsp;&nbsp;Way2Go&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
 			<button type="button" class="btn btn-default" id="mobile">
 				<span class="ion-iphone left-aside-ionicons"></span>
 				&nbsp;&nbsp;Mobile&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
 			<button type="button" class="btn btn-default" id="cancel-change">
 				<span class="ion-briefcase left-aside-ionicons"></span>
 				&nbsp;&nbsp;Cancel or Change Trips&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
 			<button type="button" class="btn btn-default" id="more">
 				<span class="ion-more left-aside-ionicons"></span>
 				&nbsp;&nbsp;More&nbsp;&nbsp;&nbsp;
+				<span class="ion-ios7-arrow-right fwd-right"></span>
 			</button>
+		</div>
+		<br><br>
+		<div class="panel-footer">
+			<ul class="list-inline col-md-10">
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">FAQs</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Cleartrip for Business</a></li>
+				<li><a href="#">Mobile</a></li>
+			</ul>
+			<ul class="list-inline col-md-2" id="panel-footer-connect">
+				<span style="color:gray;">
+					Connect:&nbsp;
+				</span>
+				<button type="button" class="btn-link btn-primary">
+					<span class="ion-social-facebook-outline"></span>
+				</button>
+				<button type="button" class="btn-link btn-info">
+					<span class="ion-social-twitter-outline"></span>
+				</button>
+			</ul>
+			<p class="small col-md-3" style="color:gray;">
+				&copy; 2006-2014 Copyright Cleartrip Pvt. Ltd.
+			</p>
+			<p>
+				<ul class="list-inline col-sm-4 cpyrt-navlist-fix-pos">
+					<li><a href="#" class="small cpyrt-list">Privacy</a></li>
+					<li><a href="#" class="small cpyrt-list">Security</a></li>
+					<li><a href="#" class="small cpyrt-list">Terms of Use</a></li>
+				</ul>
+			</p>
 		</div>
 	</div>
 </body>
