@@ -10,13 +10,13 @@ body { background-color: rgb(245,245,245); }
 
 span[class^="ion-social"] { font-size:22px; }
 
-/*#left-aside-menu { margin-right: 0px; }*/
+#left-aside-menu { margin-right: -2px; }
 
-#left-aside-menu > button { background-color: rgb(245,245,245) !important; border: none; }
+#left-aside-menu > button { background-color: rgb(245,245,245) !important; border:none; color:gray; }
 
-#left-aside-menu > button:hover { background-color: white !important; }
+#left-aside-menu > button:hover { color:black; }
 
-#left-aside-menu > .active { background-color: white !important; }
+#left-aside-menu > .active { background-color: white !important; color:black; }
 
 .btn-toolbar { display: inline-block; }
 
@@ -30,9 +30,9 @@ span[class^="ion-social"] { font-size:22px; }
 
 .content-sub-container { background-color: white; color: black; }
 
-.inline-form-marginleft { margin-left:70px; }
+.inline-form-marginleft { margin-left:60px; }
 
-#from-to { position: absolute; top: 198px; left: 340px; font-size: 18px; }
+#from-to { position: absolute; top: 170px; left: 320px; font-size: 18px; }
 
 #depart-on { width: 200px; }
 
@@ -44,4 +44,4 @@ span[class^="ion-social"] { font-size:22px; }
 
 #search-flights-btn { float: right; margin:30px 30px 30px 0px; }
 
-/*#flights-content { font-size: 13px; display:none !important; }*/
+#flights-content { font-size: 13px; z-index: 100; }

@@ -1,7 +1,12 @@
 $(function (){
-	x = window.location.href.split('CT---Frontend/');
-	y = x[1].split('.html').join("");
-	y = '#' + y; 
-	$(y).addClass('active');
-	$(y).css('border-right','none');
+	url_fname = window.location.href.split('CT---Frontend/');
+	fname_active = url_fname[1].split('.php').join("");
+	if(fname_active == []) {
+		fname_active = '#index';
+	}
+	else { 
+		fname_active = '#' + fname_active; 
+	}
+	$(fname_active).addClass('active');
+	$(fname_active).css('border-right','none');
 });
