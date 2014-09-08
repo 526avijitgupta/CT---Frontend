@@ -31,46 +31,36 @@
 
 			<div class="col-sm-6 content-sub-container" id="flights-content">
 				<div class="content-head-wrap inline-form-marginleft">
-					<h2><strong>Search  flights</strong></h2>
-					<small class="small" style="font-size:16px;">Fly Anywhere. Fly Everywhere</small>
+					<h2><strong>Search trains</strong></h2>
+					<small class="small" style="font-size:16px;">Indian Railways IRCTC Train Tickets Reservation</small>
 				</div>
 				<div class="sub-container-forms inline-form-marginleft">
-					<form role="form">
-							<br>
-							<label class="checkbox-inline">
-								<input type="radio" name="radio-filter" id="flights-form-radio-1" value="one-way" checked>
-								One Way
-							</label>
-							<label class="checkbox-inline">
-								<input type="radio" name="radio-filter" id="flights-form-radio-1" value="round-trip">
-								Round Trip
-							</label>
-							<label class="checkbox-inline">
-								<input type="radio" name="radio-filter" id="flights-form-radio-1" value="multicity">
-								Multicity
-							</label>
-							<label class="checkbox-inline">
-								<input type="radio" name="radio-filter" id="flights-form-radio-1" value="flight-hotel">
-								Flight + Hotel
-							</label>
-					</form>
 					<br>
 					<form class="inline-form" role="form">
 						<div class="form-group col-sm-5">
 							<label for="from">From</label>
 							<input type="text" class="form-control" id="from" placeholder="Any worldwide city or airport">
 						</div>
-						<span class="ion-android-arrow-forward" id="from-to"></span>
 						<div class="form-group col-sm-5 inline-form-marginleft">
 							<label for="to">To</label>
 							<input type="text" class="form-control" id="to" placeholder="Any worldwide city or airport">
 						</div>
 					</form>
-					<form role="form">
-						<div class="form-group col-sm-4">
+					<form class="inline-form" role="form">
+						<div class="form-group col-sm-5">
 							<br>
-							<label for="depart on">Depart on</label>
-							<input type="text" class="form-control" id="depart-on" placeholder="Pick a date">
+							<label for="class">Class</label>
+							<br>
+							<select id="class-select">
+								<option value="" selected>Select Class</option>
+								<option></option>
+								<option></option>
+							</select>
+						</div>
+						<div class="form-group col-sm-4 inline-form-marginleft">
+							<br>
+							<label for="depart on">Date</label>
+							<input type="text" class="form-control" id="depart-on" placeholder="dd/mm/yy">
 							<span class="ion-calendar pointer" id="date-picker"></span>
 							<br>
 						</div>
@@ -90,35 +80,42 @@
 							<br>
 							<label for="children">Children</label>
 							<br>
-							<select class="form-select-inline" id="adults">
+							<select class="form-select-inline" id="children">
 								<option value="" selected>0</option>
 								<option></option>
 								<option></option>
 							</select>
 							<small class="small">2-12 years</small>
 						</div>
-						<div class="form-group col-sm-2 inline-form-select">
+						<div class="form-group col-sm-3 inline-form-select">
 							<br>
-							<label for="infants">Infants</label>
+							<label for="senior-men">Senior Men</label>
 							<br>
-							<select class="form-select-inline" id="adults">
+							<select class="form-select-inline" id="senior-men">
 								<option value="" selected>0</option>
 								<option></option>
 								<option></option>
 							</select>
-							<small class="small">Below 2 years</small>
+							<small class="small"><br>60+ years</small>
+						</div>
+						<div class="form-group col-sm-3 inline-form-select" style="margin-left:-25px;">
+							<br>
+							<label for="senior-men">Senior Women</label>
+							<br>
+							<select class="form-select-inline" id="senior-women">
+								<option value="" selected>0</option>
+								<option></option>
+								<option></option>
+							</select>
+							<small class="small"><br>58+ years</small>
 							<br><br>
 						</div>
 					</form>
 					<div class="col-md-11" style="border-bottom:1px dotted silver;">
-						<a href="#">
-							<strong>More Options: </strong>
-							Class of travel, Airline preference
-						</a>
-						<br><br>
+						<br>
 					</div>
 				</div>
-				<button class="btn btn-warning" id="search-flights-btn">Search Flights</button>
+				<button class="btn btn-warning" id="search-flights-btn">Search Trains</button>
 			</div>
 		</div>
 

@@ -2,15 +2,23 @@
 
 body { background-color: rgb(245,245,245); }
 
+.content-container { margin:20px 0px -40px 0px; }
+
+.content-sub-container { background-color: white; color: black; margin-top: -13px; min-height: 550px; border:1px solid silver; border-top:none; border-bottom:none;}
+
+.fwd-right { float: right; font-size: 18px; margin-top:5px; }
+
+input { font-size: 13px !important; }
+
 .pointer:hover { cursor: pointer; }
 
-.btn { text-align: left; }
+.btn { text-align: left; font-size: 16px; }
 
 .left-aside-ionicons { font-size: 24px; }
 
 span[class^="ion-social"] { font-size:22px; }
 
-#left-aside-menu { margin-right: -2px; }
+#left-aside-menu { margin-right: -2px; margin-top:30px; }
 
 #left-aside-menu > button { background-color: rgb(245,245,245) !important; border:none; color:gray; }
 
@@ -28,15 +36,13 @@ span[class^="ion-social"] { font-size:22px; }
 
 .cpyrt-navlist-fix-pos { padding-left:0px; padding-right:0px; margin-left: -70px; margin-top: -4px; }
 
-.content-sub-container { background-color: white; color: black; }
-
 .inline-form-marginleft { margin-left:60px; }
 
-#from-to { position: absolute; top: 170px; left: 320px; font-size: 18px; }
+#from-to { position: absolute; top: 170px; left: 330px; font-size: 18px; }
 
 #depart-on { width: 200px; }
 
-#date-picker { position: absolute; top: 50px; left: 190px; font-size: 18px; }
+#date-picker { position: absolute; top: 47px; left: 190px; font-size: 18px; }
 
 .inline-form-select { margin-left:15px; }
 
@@ -45,3 +51,5 @@ span[class^="ion-social"] { font-size:22px; }
 #search-flights-btn { float: right; margin:30px 30px 30px 0px; }
 
 #flights-content { font-size: 13px; z-index: 100; }
+
+#class-select { width: 203px; }

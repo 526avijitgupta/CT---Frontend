@@ -31,38 +31,35 @@
 
 			<div class="col-sm-6 content-sub-container" id="flights-content">
 				<div class="content-head-wrap inline-form-marginleft">
-					<h2><strong>Search for hotels</strong></h2>
-					<small class="small" style="font-size:16px;">Over 100,000 hotels around the world</small>
+					<h2><strong>Search  flight + hotel</strong></h2>
+					<small class="small" style="font-size:16px;">Book flight and hotels together and save big</small>
 				</div>
 				<div class="sub-container-forms inline-form-marginleft">
-					<form role="form">
-							<br>
-							<label class="checkbox-inline">
-								<input type="radio" name="radio-filter" id="flights-form-radio-1" value="one-way" checked>
-								Hotels
-							</label>
-							<label class="checkbox-inline">
-								<input type="radio" name="radio-filter" id="flights-form-radio-1" value="round-trip">
-								Weekend Getaways
-							</label>
-					</form>
 					<br>
-					<form role="form">
-						<div class="form-group col-sm-11">
-							<br>
-							<label for="Where">Where</label>
-							<input type="text" class="form-control" placeholder="Enter a city, area, landmark or hotel">
-							<br>
+					<form class="inline-form" role="form">
+						<div class="form-group col-sm-5">
+							<label for="from">From</label>
+							<input type="text" class="form-control" id="from" placeholder="Any worldwide city or airport">
+						</div>
+						<div class="form-group col-sm-5 inline-form-marginleft">
+							<label for="to">To</label>
+							<input type="text" class="form-control" id="to" placeholder="Any worldwide city or airport">
 						</div>
 					</form>
 					<form class="inline-form" role="form">
 						<div class="form-group col-sm-3">
-							<label for="check-in">Check In</label>
-							<input type="text" class="form-control" id="check-in" placeholder="Pick a date">
+							<br>
+							<label for="depart-on">Depart on</label>
+							<input type="text" class="form-control" id="from" placeholder="Pick a date">
 						</div>
 						<div class="form-group col-sm-3">
-							<label for="check-out">Check Out</label>
-							<input type="text" class="form-control" id="check-out" placeholder="Pick a date">
+							<br>
+							<label for="return-on">Return on</label>
+							<input type="text" class="form-control" id="to" placeholder="Pick a date">
+						</div>
+						<div class="col-sm-6">
+							<input type="checkbox">
+							<label for="checkbox" style="font-weight:normal; font-size:13px; margin-top:10px; color:gray;"><br><br>My hotel stay is on different dates&nbsp;</label>
 						</div>
 					</form>
 					<form class="inline-form col-md-12" role="form">
@@ -102,7 +99,7 @@
 					</form>
 					<div class="col-md-11" style="border-bottom:1px dotted silver;"></div>
 				</div>
-				<button class="btn btn-warning" id="search-flights-btn">Search Hotels</button>
+				<button class="btn btn-warning" id="search-flights-btn">Search Flight + Hotel</button>
 			</div>
 		</div>
 
