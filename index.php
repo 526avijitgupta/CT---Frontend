@@ -5,15 +5,14 @@
 	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="Styles/main.css">
 	<link rel="stylesheet" href="Styles/ionicons.css">
-	<link rel="stylesheet" href="Styles/jqueryCalendar.css">
+	<link rel="stylesheet" href="Styles/datepicker.css">
 	<script type="text/javascript" src="bootstrap/jquery.js"></script>
 	<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
 	<script type="text/javascript" src="Scripts/jquery-ui.js"></script>
-	<!-- <script type="text/javascript" src="Scripts/jquery-ui-1.8.15.custom.min.js"></script> -->
 	<script type="text/javascript" src= "Scripts/link_active_assign.js"></script>
 	<script type="text/javascript" src="Scripts/connect_icon_hover.js"></script>
 	<script type="text/javascript" src="Scripts/validate_form.js"></script>
-	<script type="text/javascript" src="Scripts/date_picker.js"></script>
+	<script type="text/javascript" src="Scripts/bootstrap-datepicker.js"></script>
 	<script type="text/javascript">
 
 		airports_list = ["New Delhi","Mumbai","New York","Chennai","Kolkata","London","Tokyo","Madrid","Paris","Maldives","Singapore","Beijing","Jakarta","Dubai"];
@@ -43,12 +42,16 @@
 	// 		}
 	// });
 
+	//For Autocomplete
 	$('#from').autocomplete({
 		source: airports_list
 	});
 	$('#to').autocomplete({
 		source: airports_list
 	});
+
+	//For Datepicker
+	$('#depart-on').datepicker();
 
 });
 
@@ -114,8 +117,8 @@
 						<div class="form-group col-sm-4">
 							<br>
 							<label for="depart on">Depart on</label>
-							<input type="text" class="form-control" id="depart-on" placeholder="Pick a date">
-							<span class="ion-calendar pointer" id="date-picker"></span>
+							<input type="text" class="form-control" id="depart-on" placeholder="Pick a date" data-date-format="dd-mm-yy">
+							<!-- <span class="ion-calendar pointer" id="date-picker"></span> -->
 							<br>
 						</div>
 					</form>
@@ -125,9 +128,15 @@
 							<label for="adults">Adults</label>
 							<br>
 							<select class="form-select-inline" id="adults">
-								<option value="" selected>1</option>
-								<option></option>
-								<option></option>
+								<option value="1" selected>1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
 							</select>
 						</div>
 						<div class="form-group col-sm-2 inline-form-select">
@@ -135,9 +144,15 @@
 							<label for="children">Children</label>
 							<br>
 							<select class="form-select-inline" id="adults">
-								<option value="" selected>0</option>
-								<option></option>
-								<option></option>
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
 							</select>
 							<small class="small">2-12 years</small>
 						</div>
@@ -146,9 +161,8 @@
 							<label for="infants">Infants</label>
 							<br>
 							<select class="form-select-inline" id="adults">
-								<option value="" selected>0</option>
-								<option></option>
-								<option></option>
+								<option value="0" selected>0</option>
+								<option value="1">1</option>
 							</select>
 							<small class="small">Below 2 years</small>
 							<br><br>

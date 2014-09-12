@@ -10,8 +10,6 @@
 	<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
 	<script type="text/javascript" src="Scripts/link_active_assign.js"></script>
 	<script type="text/javascript" src="Scripts/connect_icon_hover.js"></script>
-	<script type="text/javascript" src="datePicker/jquery-1.6.2.min.js"></script>
-	<script type="text/javascript" src="datePicker/jquery-ui-1.8.15.custom.min.js"></script>
 	<!--<script type="text/javascript" src="Scripts/date_picker.js"></script>-->
 </head>
 <body>
