@@ -5,10 +5,54 @@
 	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="Styles/main.css">
 	<link rel="stylesheet" href="Styles/ionicons.css">
+	<link rel="stylesheet" href="Styles/jqueryCalendar.css">
 	<script type="text/javascript" src="bootstrap/jquery.js"></script>
 	<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="Scripts/jquery-ui.js"></script>
+	<!-- <script type="text/javascript" src="Scripts/jquery-ui-1.8.15.custom.min.js"></script> -->
 	<script type="text/javascript" src= "Scripts/link_active_assign.js"></script>
 	<script type="text/javascript" src="Scripts/connect_icon_hover.js"></script>
+	<script type="text/javascript" src="Scripts/validate_form.js"></script>
+	<script type="text/javascript" src="Scripts/date_picker.js"></script>
+	<script type="text/javascript">
+
+		airports_list = ["New Delhi","Mumbai","New York","Chennai","Kolkata","London","Tokyo","Madrid","Paris","Maldives","Singapore","Beijing","Jakarta","Dubai"];
+
+		$(function(){
+
+	// 		$.ajax({
+	// 		type: "POST",
+	// 		url: "",//"sqldata.php",
+	// 		success: function (result) {
+	// 			if(result) {
+
+	// 				var ajax_airport_list = JSON.parse(result);
+	// 				var counter = 0;
+	// 				while(ajax_airports_list[counter]) {
+	// 					airports_list.push(ajax_airports_list[counter]);
+	// 					counter += 1;
+	// 				}
+
+	// 				$('#from').autocomplete({
+	// 					source: airports_list
+	// 				});
+	// 				$('#to').autocomplete({
+	// 					source: airports_list
+	// 				});
+	// 			}
+	// 		}
+	// });
+
+	$('#from').autocomplete({
+		source: airports_list
+	});
+	$('#to').autocomplete({
+		source: airports_list
+	});
+
+});
+
+	</script>
 </head>
 <body>
 	<div class="container col-xs-12"> 
@@ -120,6 +164,27 @@
 				</div>
 				<button class="btn btn-warning" id="search-flights-btn">Search Flights</button>
 			</div>
+
+			<div class="col-sm-6 content-sub-container" id="search-results-container" style="display:none;">
+				<div class="content-head-wrap"> <!--  inline-form-marginleft -->
+					<h2><strong>Search  results</strong></h2>
+				</div>
+				<div class="results-div-wrap">
+					<div class="">
+
+					</div>
+					<div class="">
+
+					</div>
+					<div class="">
+
+					</div>
+					<div class="">
+
+					</div>
+				</div>		
+			</div>
+
 		</div>
 
 		<br><br>

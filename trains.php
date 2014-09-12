@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="Styles/ionicons.css">
 	<script type="text/javascript" src="bootstrap/jquery.js"></script>
 	<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
-	<script type="text/javascript" src= "Scripts/link_active_assign.js"></script>
+	<script type="text/javascript" src="Scripts/link_active_assign.js"></script>
 	<script type="text/javascript" src="Scripts/connect_icon_hover.js"></script>
 </head>
 <body>

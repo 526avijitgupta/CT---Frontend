@@ -5,10 +5,14 @@
 	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="Styles/main.css">
 	<link rel="stylesheet" href="Styles/ionicons.css">
+	<link rel="stylesheet" href="datePicker/jqueryCalendar.css">
 	<script type="text/javascript" src="bootstrap/jquery.js"></script>
 	<script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
-	<script type="text/javascript" src= "Scripts/link_active_assign.js"></script>
+	<script type="text/javascript" src="Scripts/link_active_assign.js"></script>
 	<script type="text/javascript" src="Scripts/connect_icon_hover.js"></script>
+	<script type="text/javascript" src="datePicker/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="datePicker/jquery-ui-1.8.15.custom.min.js"></script>
+	<!--<script type="text/javascript" src="Scripts/date_picker.js"></script>-->
 </head>
 <body>
 	<div class="container col-xs-12"> 
